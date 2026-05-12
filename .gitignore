@@ -1,0 +1,17 @@
+**/node_modules/
+**/.env
+.DS_Store
+dist/
+build/
+*.log
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+.gemini/
+server/seed.js
+server/test_system.js
+server/final_test.js
+.antigravity/
+artifacts/
+scratch/

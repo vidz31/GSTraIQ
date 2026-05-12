@@ -1,0 +1,18 @@
+{
+  "name": "gstraiq",
+  "version": "1.0.0",
+  "description": "GSTraIQ - Smart GST Analytics & Compliance Assistant",
+  "scripts": {
+    "install-client": "npm install --prefix client",
+    "install-server": "npm install --prefix server",
+    "install-ml": "pip install -r ml-service/requirements.txt",
+    "install-all": "npm run install-client && npm run install-server && npm run install-ml",
+    "client": "npm run dev --prefix client",
+    "server": "npm run dev --prefix server",
+    "ml": "python ml-service/app.py",
+    "dev": "concurrently \"npm run client\" \"npm run server\" \"npm run ml\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
